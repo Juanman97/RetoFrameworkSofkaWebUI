@@ -10,7 +10,13 @@ public enum Numbers {
     SEVEN(7),
     EIGHT(8),
     NINE(9),
-    TEN(10);
+    TEN(10),
+    TWELVE(12),
+    TWENTY_EIGHT(28),
+    NINETEEN_TWENTY_TWO(1922),
+    TWO_THOUSAND_THREE(2003),
+    THREE_ZEROES(300000000),
+    THREE_NINES(399999999);
 
     private final int value;
 

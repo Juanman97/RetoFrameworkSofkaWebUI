@@ -1,5 +1,3 @@
-# new feature
-# Tags: optional
 # language: es
 @FeatureName:contactarseConLaTienda
 Característica: Contactarse con la tienda

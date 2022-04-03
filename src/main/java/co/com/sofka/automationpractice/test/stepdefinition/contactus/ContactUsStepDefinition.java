@@ -5,7 +5,6 @@ import co.com.sofka.automationpractice.test.controllers.contactus.MessageSentWeb
 import co.com.sofka.automationpractice.test.controllers.contactus.SendMessageWebController;
 import co.com.sofka.automationpractice.test.controllers.openwebpage.StartBrowserWebController;
 import co.com.sofka.automationpractice.test.data.objects.TestInfo;
-import co.com.sofka.automationpractice.test.model.contactus.ContactUsModel;
 import co.com.sofka.automationpractice.test.stepdefinition.Setup;
 import co.com.sofka.test.actions.WebAction;
 import co.com.sofka.test.evidence.reports.Assert;
@@ -19,7 +18,6 @@ import io.cucumber.java.es.Entonces;
 
 public class ContactUsStepDefinition extends Setup {
     private WebAction webAction;
-    private ContactUsModel contactUsModel;
 
     @Before
     public void setup(Scenario scenario){
@@ -78,10 +76,7 @@ public class ContactUsStepDefinition extends Setup {
     }
 
     @After
-    public void cerrarDriver() throws InterruptedException {
-
-//        Thread.sleep(5000);
-
+    public void cerrarDriver() {
         if (webAction != null && webAction.getDriver() != null)
             webAction.closeBrowser();
 
